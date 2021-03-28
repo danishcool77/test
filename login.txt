@@ -1,12 +1,4 @@
-login branch master ++++
-added from github
-added from local
+danish added
+   from     github      again
 
-hi frm oracle
-
-frm github
-
-from git
-3
-4
-
+updated
