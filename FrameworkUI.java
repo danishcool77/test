@@ -73,8 +73,13 @@ import learning.NaviLearner;
 import obbrn.execution.IExecutor;
 import obbrn.learning.INaviLearner;
 import functionCollection.MessageObject;
+<<<<<<< HEAD
 
 import readingConfigFile.ConfigObject;
+=======
+login
+import readingConfigFile.ConfigObject; ,login2
+>>>>>>> login2
 import readingConfigFile.ConfigXML;
 import readingConfigFile.DatabaseDetails;
 import readingConfigFile.FlexcubeUser;
@@ -427,7 +432,9 @@ public class FrameworkUI {
 						if(tblelements != null)
 						{
 							for(int msg=0; msg<tblelements.size(); msg++)
-							{
+
+						login2	{
+
 								errormsg.append(tblelements.get(msg).text()).append("; ");
 							}
 						}
@@ -641,11 +648,13 @@ public class FrameworkUI {
 							case CLOSE:
 								sv.setCloseLrnRequired(true);
 								break;
-							case REVERSE:
+						case REVERSE login2:
+								sv.setReopenLrnRequired(true);login							
 								sv.setReverseLrnRequired(true);
 								break;
 							case REOPEN:
-								sv.setReopenLrnRequired(true);login
+								sv.setReopenLrnRequired(true);
+
 								break;
 							}
 						}
@@ -1575,6 +1584,7 @@ public class FrameworkUI {
 			else
 			{
 				System.out.println("Looking for SUMMARY sheet");login
+
 				fileRelatedFunctions.updateFile(logfilename,"Looking for SUMMARY sheet "+"\n");
 				fileRelatedFunctions.updateFile(logfilename,"ERROR" +"\n");
 				fileRelatedFunctions.updateFile(logfilename,"Execution might be based on SUMMARY sheet and not on MASTER SUMMARY"+"\n");
